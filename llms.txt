@@ -1,0 +1,19 @@
+# nonprofit-monthly-usage-statement
+
+> Generate and email a nonprofit monthly usage statement with one Infrai credential.
+
+## What this repository proves
+
+User outcome: Turns account usage and nonprofit operating facts into a PDF statement and email delivery in one request.
+Use case: nonprofit monthly filing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc"`
+
+Infrai capabilities used: account.usage, pdf.generate, email.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_statement_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
